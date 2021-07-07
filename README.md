@@ -1,7 +1,7 @@
 
 
 <p align="center">
-## Quoter site
+  <h1>Quoter site</h1>
   <img src="https://quoter.ml/avatar.png" width="100" />
 </p>
 
