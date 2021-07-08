@@ -1,0 +1,102 @@
+.button-dark, .button-dark:visited {
+    display: inline-block;
+    max-width: 200px;
+    font-family: "Signika", sans-serif;
+    color: #2C2F33;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .button-dark:hover {
+      color: #110e0e;
+  }
+
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+  }
+  .waves {
+    position:absolute;
+    width: 100%;
+    height: 100px;
+    margin-bottom: -7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+    margin-top: 170px;
+    bottom: 15vh;
+  }
+  
+  .contentt {
+    position:absolute;
+    height:15vh;
+    text-align:center;
+    background-color: white;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 1;
+    bottom: 0%;
+    width: 100%;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    font-size:25px;
+    color: #23272A;
+    background-color: white;
+  }
+  p:link, p:visited, p:hover, p:active {
+    text-decoration: none;
+  }
+
+@media screen and (max-width:800px) {
+    .waves {
+        position:relative;
+        height: 20px;
+        min-height: 20px;
+        margin-top: 100px;
+        bottom: 0%;
+      }
+      .contentt {
+        position:relative;
+        height: 50vh;
+        flex-wrap: wrap;
+        bottom: 0%;
+        width: 100%;
+      }
+      h1 {
+        font-size:24px;
+      }
+}

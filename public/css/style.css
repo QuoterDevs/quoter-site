@@ -1,0 +1,117 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #2C2F33;
+}
+
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+  text-align: center;
+}
+
+.addbot a {
+	text-decoration: none;
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+
+}
+
+.addbot i {
+	font-size: 40px;
+  background-color: #7289DA;
+}
+.button, .button:visited, .button-dark {
+  display: inline-block;
+  max-width: 200px;
+  margin: 10px 10px 25px 10px;
+  padding: 10px;
+  font-family: "Signika", sans-serif;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  text-transform: capitalize;
+  text-align: center;
+  transition: all 0.1s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.button:hover {
+  transition: all 0.3s ease;
+  box-shadow: 0 0px 15px 5px rgba(0,0,0,0.3);
+}
+.button:hover {
+  background-color: #23272A;
+  box-shadow: 0 0px 15px 5px rgba(0,0,0,0.3); 
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+.menu a:hover, .menu a:target {
+  color: #c8e0f0;
+  background-color: #7289DA;
+}
+.bot {
+	margin: 150px 150px 0 150px;
+	padding: 30px;
+  float: center;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-family: "montserrat", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width:800px) {
+  
+  .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.addbot i {
+	font-size: 30px;
+  background-color: #322f35;
+}
+.bot {
+	margin: 100px 50px 0 50px;
+	padding: 10px;
+  float: center;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  
+}
+.addbot a {
+	text-decoration: none;
+	color: #000;
+	font-size: 25px;
+}
+.addbot {
+	margin: 10px;
+}
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+}
+
